@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <!-- Header -->
 
     <div class="header">
-      <div class="header-logo">Header Logo</div>
+      <div id="header-logo">Header Logo</div>
       <div class="header-list">
         <ul>
-          <li class="header-links">header link one</li>
-          <li class="header-links">header link two</li>
-          <li class="header-links">header link three</li>
+          <li class="header-links"><a href="#">header link one</a></li>
+          <li class="header-links"><a href="#">header link two</a></li>
+          <li class="header-links"><a href="#">header link three</a></li>
         </ul>
       </div>
     </div>
@@ -25,14 +28,19 @@
 
     <div class="header-content">
       <div class="header-left">
-        <h1>This website is awesome</h1>
+        <p class="header-header">This website is awesome</h1>
         <p>
           This website has some subtext that goes here under the main title.
           It's a smaller font and the color is lower contrast
         </p>
+        <button class="header-button">Sign Up</button>
       </div>
       <div class="header-right">
-        <img src="" alt="" class="header-img" />
+        <img
+          src="https://images.unsplash.com/photo-1658148901393-8027e40d4f4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          alt=""
+          class="header-img"
+        />
       </div>
     </div>
 
@@ -40,21 +48,33 @@
 
     <div class="main-content">
       <div class="main-header">
-        <h2>Some random information</h2>
+        <p id="main-header">Some random information</p>
       </div>
       <div class="content-cards">
-        <img src="" alt="" class="card" />
-        <p class="card-text">
-          this is some subtext under and illustration or image
-        </p>
-        <img src="" alt="" class="card" />
-        <p class="card-text">
-          this is some subtext under and illustration or image
-        </p>
-        <img src="" alt="" class="card" />
-        <p class="card-text">
-          this is some subtext under and illustration or image
-        </p>
+        <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1658052827377-3289408e1817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="" class="card" />
+            <p class="card-text">
+            this is some subtext under and illustration or image
+            </p>
+        </div>
+        <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1658052827377-3289408e1817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="" class="card" />
+            <p class="card-text">
+            this is some subtext under and illustration or image
+            </p>
+        </div>
+        <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1658052827377-3289408e1817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="" class="card" />
+            <p class="card-text">
+            this is some subtext under and illustration or image
+            </p>
+        </div>
+        <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1658052827377-3289408e1817?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="" class="card" />
+            <p class="card-text">
+            this is some subtext under and illustration or image
+            </p>
+        </div>
       </div>
     </div>
 
@@ -69,14 +89,26 @@
       <cite>-Thor, God of Thunder</cite>
     </div>
 
-    <!-- footer  -->
-    <footer class="footer">
-      <div class="footer-left">
-        <div class="footer-header">Call to action! It's time!</div>
-        <div class="footer-text">
-          Sign up for our product by clicking that button right over there!
+    <!-- signup  -->
+
+    <div class="signup">
+      <div class="signup-left">
+        <div class="signup-header">
+          <p id="signup-header">Call to action! It's time!</p>
+        </div>
+        <div class="signup-text">
+          <p id="signup-text">
+            Sign up for our product by clicking that button right over there!
+          </p>
         </div>
       </div>
+      <div class="signup-button">
+        <button>Sign up</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text">Copyright The Odin Project 2021</p>
     </footer>
   </body>
 </html>
